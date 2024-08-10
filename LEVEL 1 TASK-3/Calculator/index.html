@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table border="2" class="main" style="background-color:rgb(0, 0, 0);">
+        <tr style="height: 50px;">
+            <td colspan="4"><input type="text" placeholder="0" id="ipt"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="%" class="bg" onclick="op(value)" id="%"></td>
+            <td><input type="button" value="CE" class="bg" onclick="reduceRes()" id="CE"></td>
+            <td><input type="button" value="AC" onclick="AllClear()" class="bg" id="restart"></td>
+            <td><input type="button" value="/&nbsp;" onclick="op(value)" class="bg" id="divide"></td>
+            <td><input type="button" value="sin(" onclick="op(value)" class="bg" id="sin"></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="op(value)" class="bg" id="seven"></td>
+            <td><input type="button" value="8" onclick="op(value)" class="bg" id="eight"></td>
+            <td><input type="button" value="9" onclick="op(value)" class="bg" id="nine"></td>
+            <td><input type="button" value="+" onclick="op(value)" class="bg" id="plus"></td>
+            <td><input type="button" value="cos(" onclick="op(value)" class="bg" id="cos"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="op(value)" class="bg" id="four"></td>
+            <td><input type="button" value="5" onclick="op(value)" class="bg" id="five"></td>
+            <td><input type="button" value="6" onclick="op(value)" class="bg" id="six"></td>
+            <td><input type="button" value="-" onclick="op(value)" class="bg" id="minus"></td>
+            <td><input type="button" value="tan(" onclick="op(value)" class="bg" id="tan"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="op(value)" class="bg" id="one"></td>
+            <td><input type="button" value="2" onclick="op(value)" class="bg" id="two"></td>
+            <td><input type="button" value="3" onclick="op(value)" class="bg" id="three"></td>
+            <td><input type="button" value="*" onclick="op(value)" class="bg" id="multi"></td>
+            <td><input type="button" value=")" onclick="op(value)" class="bg" id="close"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="00" onclick="op(value)" class="bg" id="doubleZero"></td>
+            <td><input type="button" value="0" onclick="op(value)" class="bg" id="zero"></td>
+
+            <td colspan="2"><input type="button" value="=" onclick="EqualClick()" class="bg" id="equal"
+                    style="width: 70px;"></td>
+            <td><input type="button" value="√ " onclick="root()" class="bg" id="root"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="π " onclick="pi()" class="bg" id="pie"></td>
+            <td><input type="button" value="e " onclick="e()" class="bg" id="expo"></td>
+            <td><input type="button" value="x! " onclick="fact()" class="bg" id="factor"></td>
+            <td><input type="button" value="x^y" onclick="sqr()" class="bg" id="sqr"></td>
+            <td><input type="button" value="inv " onclick="inv()" class="bg" id="inv"></td>
+
+
+
+
+
+
+    </table>
+   <script src="script.js"></script>
+</body>
+
+</html>
